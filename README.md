@@ -1,12 +1,17 @@
 Hadoop_KMeans_MapReduce_Java
 ============================
-Mapper output: <centroid,point> ======key is the center point of the cluster which the point from value belongs to 
+Mapper 
+output: <centroid,point> 
+key is the center point of the cluster which the point from value belongs to 
 
-Combiner input: Mapper Output
-         output:<centroid, string((sum of point)+(point count)) =====the value will be used to calculate new centroid in reducer
+Combiner 
+input: Mapper Output
+output:<centroid, string((sum of point)+(point count)) 
+the value will be used to calculate new centroid in reducer
 
-Reducer input: Combiner Output
-        output:<new_centroid,count_of_current_unchanged_centroid_point>
+Reducer 
+input: Combiner Output
+output:<new_centroid,count_of_current_unchanged_centroid_point>
 
 
 
