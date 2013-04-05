@@ -1,6 +1,6 @@
 Hadoop_KMeans_MapReduce_Java
 ============================
-####Mapper####    
+####Mapper####
 OUTPUT: <centroid,point>     
 key is the center point of the cluster which the point from value belongs to     
 
@@ -9,9 +9,9 @@ INPUT: Mapper Output
 OUTPUT:<centroid, string((sum of point)+(point count))    
 the value will be used to calculate new centroid in reducer   
 
-####Reducer####   
+####Reducer####
 INPUT: Combiner Output   
-OUTPUT:<new_centroid,count_of_current_unchanged_centroid_point>   
+OUTPUT: <new_centroid,count_of_current_unchanged_centroid_point>      
 
 (I should learn how to write README.md in Github. ^_^)     
 
