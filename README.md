@@ -11,11 +11,13 @@ the value will be used to calculate new centroid in reducer
 
 ####Reducer####
 INPUT: Combiner Output   
-OUTPUT: <new_centroid,count_of_current_unchanged_centroid_point>      
+OUTPUT: `<new_centroid,count_of_current_unchanged_centroid_point>`      
 
 (I should learn how to write README.md in Github. ^_^)     
 
 You can know something more about what I encounterd when I did it:    
 http://sbzhouhao.blogspot.com/2013/04/weird-combiner-in-hadoop.html
+
+Sorry, I haven't given enough comments to these code files.
 
 You can also contact me directly for more detail: hzhou@wpi.edu 
