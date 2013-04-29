@@ -39,6 +39,7 @@ Hint: You may reference these links to get some ideas (in addition to the course
 Write map-­‐reduce job(s) that implement the K-­‐Means clustering algorithm as given in the course slides. The algorithm should terminates if either of these two conditions become true:    
 >>a)	The K centers did not change over two consecutive iterations    
 >>b)	The maximum number of iterations (make it six (6) iterations) has reached.   
+
 •	Apply the tricks given in class and in the 2nd link above such as:   
 >o	Use of a combiner    
 >o	Use a single reducer    
