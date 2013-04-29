@@ -25,7 +25,7 @@ You can also contact me directly for more detail: hzhou@wpi.edu
 K‐Means clustering is a popular algorithm for clustering similar objects into K groups (clusters). It starts with an initial seed of K points (randomly chosen) as centers, and then the algorithm iteratively tries to enhance  these  centers.  The  algorithm  terminates  either  when  two  consecutive  iterations  generate  the same K centers, i.e., the centers did not change, or a maximum number of iterations is reached.  
  
 Hint: You may reference these links to get some ideas (in addition to the course slides): 
->[http://en.wikipedia.org/wiki/K-­‐means_clustering#Standard_algorith](http://en.wikipedia.org/wiki/K-­‐means_clustering#Standard_algorithm )
+>[http://en.wikipedia.org/wiki/K-­‐means_clustering#Standard_algorith](http://en.wikipedia.org/wiki/K-­‐means_clustering#Standard_algorithm )     
 >[https://cwiki.apache.org/confluence/display/MAHOUT/K-­‐Means+Clustering](https://cwiki.apache.org/confluence/display/MAHOUT/K-­‐Means+Clustering)
  
  
@@ -37,11 +37,11 @@ Hint: You may reference these links to get some ideas (in addition to the course
  
 ###Step 2 (Clustering the Data):  
 Write map-­‐reduce job(s) that implement the K-­‐Means clustering algorithm as given in the course slides. The algorithm should terminates if either of these two conditions become true:    
-a)	The K centers did not change over two consecutive iterations    
-b)	The maximum number of iterations (make it six (6) iterations) has reached.   
+>>a)	The K centers did not change over two consecutive iterations    
+>>b)	The maximum number of iterations (make it six (6) iterations) has reached.   
 •	Apply the tricks given in class and in the 2nd link above such as:   
-o	Use of a combiner    
-o	Use a single reducer    
-o	The reducer should indicate in its output file whether centers have changed or not.    
+>o	Use of a combiner    
+>o	Use a single reducer    
+>o	The reducer should indicate in its output file whether centers have changed or not.    
  
 *Hint*: Since the algorithm is iterative, then you need your program that generates the map-­‐reduce jobs to control whether it should start another iteration or not. 
