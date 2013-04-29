@@ -1,7 +1,7 @@
 Hadoop_KMeans_MapReduce_Java
 ============================
 ####Mapper####
-OUTPUT: <centroid,point>     
+OUTPUT: `<centroid,point>`     
 key is the center point of the cluster which the point from value belongs to     
 
 ####Combiner####
